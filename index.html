@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>ESCAPE coffee&amp;climbing｜行橋・京築エリアのボルダリングジム＆カフェ</title>
+  <meta name="description" content="福岡県行橋市のボルダリングジム「ESCAPE coffee&climbing」。初心者〜上級者まで100本以上の課題、早朝6時から深夜24時まで営業。La Marzocco使用の本格カフェ併設。JR行橋駅から徒歩15分・無料駐車場あり。キッズスクールも開催中。" />
+  <meta name="keywords" content="ボルダリング,クライミング,行橋,京築,北九州,福岡,ジム,スポーツ,キッズスクール,カフェ,ESCAPE,コーヒー,初心者,早朝営業,深夜営業,セルフ利用" />
+  <meta name="author" content="ESCAPE coffee&amp;climbing" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.escapecandc.jp/" />
+
+  <!-- ===== OGP ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ESCAPE coffee&amp;climbing" />
+  <meta property="og:title" content="ESCAPE coffee&amp;climbing｜行橋・京築エリアのボルダリングジム＆カフェ" />
+  <meta property="og:description" content="福岡県行橋市のボルダリングジム。初心者〜上級者まで100本以上の課題。早朝6時〜深夜24時営業。本格カフェ併設・キッズスクールあり。" />
+  <meta property="og:url" content="https://www.escapecandc.jp/" />
+  <meta property="og:image" content="https://www.escapecandc.jp/DSC_9852.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ESCAPE coffee&amp;climbing｜行橋・京築エリアのボルダリングジム" />
+  <meta name="twitter:description" content="福岡県行橋市のボルダリングジム。早朝6時〜深夜24時営業。本格カフェ併設・キッズスクールあり。" />
+  <meta name="twitter:image" content="https://www.escapecandc.jp/DSC_9852.jpg" />
+
+  <!-- ===== 構造化データ ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "ESCAPE coffee&climbing",
+    "alternateName": "エスケープ コーヒーアンドクライミング",
+    "description": "福岡県行橋市のボルダリングジム。初心者から上級者まで100本以上の課題を常設。早朝6時から深夜24時まで営業。La Marzocco使用の本格カフェ併設。キッズスクール開催中。",
+    "url": "https://www.escapecandc.jp/",
+    "telephone": "0930-31-0272",
+    "image": "https://www.escapecandc.jp/DSC_9852.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "行事4-3-2",
+      "addressLocality": "行橋市",
+      "addressRegion": "福岡県",
+      "postalCode": "824-0001",
+      "addressCountry": "JP"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 33.7242, "longitude": 130.9897 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "24:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday","PublicHolidays"], "opens": "06:00", "closes": "24:00" }
+    ],
+    "priceRange": "¥1,500〜¥11,000",
+    "currenciesAccepted": "JPY",
+    "paymentAccepted": "現金, クレジットカード",
+    "sameAs": ["https://www.instagram.com/escape_candc/"]
+  }
+  </script>
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #FFF8F0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* ===== Color Palette ===== */
+    :root {
+      --coral:  #FF6B6B;
+      --yellow: #FFD93D;
+      --mint:   #6BCB77;
+      --sky:    #4D96FF;
+      --purple: #9B5DE5;
+      --orange: #FF8C42;
+      --pink:   #FF6FB7;
+      --cream:  #FFF8F0;
+      --dark:   #2D2D2D;
+    }
+
+    /* ===== Decorative BG ===== */
+    body::before {
+      content: ''; position: fixed; top: -120px; right: -120px;
+      width: 400px; height: 400px; background: var(--yellow);
+      border-radius: 50%; opacity: 0.12; z-index: -1;
+    }
+    body::after {
+      content: ''; position: fixed; bottom: -80px; left: -80px;
+      width: 300px; height: 300px; background: var(--mint);
+      border-radius: 50%; opacity: 0.1; z-index: -1;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255, 248, 240, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 3px solid var(--yellow);
+      padding: 0 2rem;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px;
+    }
+    .nav-logo {
+      font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 1.4rem;
+      color: var(--dark); text-decoration: none; line-height: 1.2;
+    }
+    .nav-logo span { color: var(--coral); }
+    .nav-logo small { font-size: 0.65rem; color: var(--orange); display: block; letter-spacing: 2px; font-weight: 500; }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
+    .nav-links a {
+      text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.9rem;
+      position: relative; transition: color 0.3s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px;
+      border-radius: 2px; background: var(--coral); transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--coral); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--coral) !important; color: #fff !important;
+      padding: 0.45rem 1.2rem; border-radius: 50px; font-weight: 700 !important;
+      font-size: 0.85rem !important; transition: transform 0.2s, background 0.2s !important;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: #e85555 !important; transform: scale(1.04); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { display: block; width: 26px; height: 3px; background: var(--dark); border-radius: 2px; transition: 0.3s; }
+
+    /* ===== Hero ===== */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 120px 2rem 80px; position: relative; overflow: hidden;
+    }
+    .hero-bg-shapes { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+    .hero-bg-shapes .shape { position: absolute; border-radius: 50%; animation: float 6s ease-in-out infinite; }
+    .s1 { width:80px; height:80px; background:var(--coral); opacity:0.18; top:15%; left:8%; animation-delay:0s; }
+    .s2 { width:120px; height:120px; background:var(--sky); opacity:0.13; top:25%; right:10%; animation-delay:1s; }
+    .s3 { width:60px; height:60px; background:var(--yellow); opacity:0.22; bottom:20%; left:15%; animation-delay:2s; }
+    .s4 { width:100px; height:100px; background:var(--mint); opacity:0.15; bottom:30%; right:20%; animation-delay:0.5s; }
+    .s5 { width:50px; height:50px; background:var(--purple); opacity:0.18; top:60%; left:50%; animation-delay:3s; }
+    @keyframes float {
+      0%,100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-block; background: var(--yellow); color: var(--dark);
+      font-weight: 700; padding: 0.4rem 1.3rem; border-radius: 50px;
+      font-size: 0.85rem; margin-bottom: 1.5rem; letter-spacing: 1px;
+    }
+    .hero h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem;
+    }
+    .hero h1 .line1 { color: var(--dark); }
+    .hero h1 .line2 {
+      background: linear-gradient(135deg, var(--coral), var(--orange), var(--pink));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub { font-size: clamp(1rem, 2.5vw, 1.25rem); color: #666; margin: 1rem 0 2rem; }
+    .hero-stats {
+      display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Fredoka', sans-serif; font-size: 2.2rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--coral), var(--orange));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.82rem; color: #888; font-weight: 500; letter-spacing: 1px; margin-top: 0.2rem; }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: linear-gradient(135deg, var(--coral), var(--orange));
+      color: #fff; padding: 1rem 2.5rem; border-radius: 50px;
+      font-size: 1.1rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 8px 25px rgba(255,107,107,0.35); transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(255,107,107,0.45); }
+
+    /* ===== Section Shared ===== */
+    section { padding: 80px 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block; font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.6rem; color: var(--coral);
+    }
+    .section-title {
+      font-family: 'Fredoka', sans-serif; font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700; margin-bottom: 0.5rem;
+    }
+    .section-accent {
+      display: block; width: 60px; height: 5px; border-radius: 3px; margin: 0.5rem 0 2.5rem;
+    }
+    .section-desc { font-size: 1rem; color: #666; line-height: 1.75; max-width: 560px; }
+
+    /* ===== Features ===== */
+    #features { background: #fff; }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2.5rem;
+    }
+    .feature-card {
+      background: var(--cream); border-radius: 24px; padding: 2rem;
+      position: relative; overflow: hidden; transition: transform 0.25s;
+      border: 2px solid transparent;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-card::before {
+      content: ''; position: absolute; top: -30px; right: -30px;
+      width: 100px; height: 100px; border-radius: 50%; opacity: 0.18;
+    }
+    .fc-1 { border-color: var(--yellow); }
+    .fc-1::before { background: var(--yellow); }
+    .fc-2 { border-color: var(--coral); }
+    .fc-2::before { background: var(--coral); }
+    .fc-3 { border-color: var(--mint); }
+    .fc-3::before { background: var(--mint); }
+    .fc-4 { border-color: var(--sky); }
+    .fc-4::before { background: var(--sky); }
+    .feature-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+    .fc-1 .feature-icon { color: var(--yellow); }
+    .fc-2 .feature-icon { color: var(--coral); }
+    .fc-3 .feature-icon { color: var(--mint); }
+    .fc-4 .feature-icon { color: var(--sky); }
+    .feature-card h3 {
+      font-family: 'Fredoka', sans-serif; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--dark);
+    }
+    .feature-card p { color: #666; font-size: 0.9rem; line-height: 1.65; }
+
+    /* ===== Gallery ===== */
+    #gallery { background: linear-gradient(135deg, #FFF3E0 0%, #FFF8F0 100%); padding: 80px 2rem; }
+    #gallery .section-label { color: var(--orange); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 2.5rem; }
+    .gallery-item { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 4/3; background: #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+    .gallery-main { grid-column: 1/3; aspect-ratio: 16/9; }
+    .gallery-wide { grid-column: 1/3; aspect-ratio: 16/7; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: #fff; font-size: 0.82rem; font-weight: 600; padding: 1.5rem 1rem 0.75rem;
+      opacity: 0; transform: translateY(6px); transition: opacity 0.3s, transform 0.3s;
+    }
+    .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
+    .gallery-placeholder {
+      width: 100%; height: 100%; background: rgba(0,0,0,0.03);
+      display: flex; align-items: center; justify-content: center;
+      color: #bbb; font-size: 0.85rem; font-weight: 500;
+      border: 2px dashed rgba(0,0,0,0.1);
+    }
+
+    /* ===== Pricing ===== */
+    #pricing { background: var(--yellow); }
+    #pricing .section-title { color: var(--dark); }
+    #pricing .section-label { color: var(--coral); }
+    #pricing .section-desc { color: rgba(45,45,45,0.7); }
+    .price-block { margin-top: 2rem; }
+    .price-block-title {
+      font-family: 'Fredoka', sans-serif; font-size: 1.15rem; color: var(--dark);
+      margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .price-single-row {
+      display: flex; align-items: center; justify-content: space-between;
+      background: #fff; border-radius: 16px; padding: 1rem 1.5rem;
+      border: 3px solid var(--coral);
+    }
+    .price-single-label { font-family: 'Fredoka', sans-serif; font-size: 1.1rem; color: var(--dark); }
+    .price-single-val { font-family: 'Fredoka', sans-serif; font-size: 1.9rem; color: var(--coral); }
+    .price-table { border-radius: 18px; overflow: hidden; border: 3px solid var(--orange); background: #fff; }
+    .pt-head { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; background: var(--orange); }
+    .pt-head .pt-label { padding: 0.7rem 1rem; }
+    .pt-col { padding: 0.7rem 0.5rem; text-align: center; font-weight: 700; font-size: 0.9rem; }
+    .col-general { background: var(--purple); color: #fff; }
+    .col-student  { background: var(--mint); color: #fff; }
+    .col-kids     { background: var(--pink); color: #fff; }
+    .pt-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; border-top: 2px solid #eee; }
+    .pt-row .pt-label {
+      background: var(--yellow); padding: 0.85rem 1rem; font-weight: 700;
+      font-size: 0.9rem; color: var(--dark); display: flex; flex-direction: column; justify-content: center;
+    }
+    .pt-row .pt-label small { font-size: 0.72rem; font-weight: 500; color: #666; margin-top: 2px; }
+    .pt-row .pt-col { padding: 0.85rem 0.5rem; border-left: 2px solid #eee; text-align: center; font-size: 0.95rem; font-weight: 600; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .pt-row .pt-col small { font-size: 0.72rem; color: #999; font-weight: 500; }
+    .col-span2 { grid-column: span 2; text-align: center; font-weight: 700; }
+    .note-cell { grid-column: span 2; display: flex; align-items: center; padding: 0.85rem 0.75rem; }
+    .note-cell span { font-size: 0.78rem; color: #aaa; font-weight: 500; }
+    .highlight-row .pt-label { background: var(--coral); color: #fff; }
+    .highlight-row .pt-label small { color: rgba(255,255,255,0.75); }
+    .highlight-row { background: #fff5f5; }
+    .price-note { font-size: 0.82rem; color: #666; font-weight: 500; margin-top: 0.5rem; padding: 0 0.2rem; line-height: 1.65; }
+    .price-note strong { color: var(--coral); }
+    .kids-wall-row {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--purple); border-radius: 16px; padding: 1rem 1.5rem;
+      border: 3px solid var(--purple);
+    }
+    .kids-wall-label { font-family: 'Fredoka', sans-serif; font-size: 1.1rem; color: #fff; }
+    .kids-wall-val { font-family: 'Fredoka', sans-serif; font-size: 1.9rem; color: var(--yellow); }
+
+    /* ===== Hours ===== */
+    #hours { background: #fff; }
+    #hours .section-label { color: var(--mint); }
+    .hours-legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .hours-legend-item { display: flex; align-items: center; gap: 0.5rem; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .legend-dot-mint { background: var(--mint); }
+    .legend-dot-sky  { background: var(--sky); }
+    .hours-legend-item span { color: #666; font-size: 0.9rem; font-weight: 500; }
+    .hours-note-text { color: #888; font-size: 0.88rem; margin-bottom: 2rem; line-height: 1.7; }
+    .hours-note-text strong { color: var(--coral); }
+    .hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem; }
+    .hours-card {
+      background: var(--cream); border: 2px solid rgba(0,0,0,0.06);
+      border-radius: 24px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    }
+    .hours-card h3 { font-family: 'Fredoka', sans-serif; color: var(--dark); font-size: 1.2rem; margin-bottom: 1.2rem; }
+    .hours-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.6rem 0; border-bottom: 1px dashed #ddd;
+      font-size: 0.92rem;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row-label { display: flex; align-items: center; gap: 0.5rem; color: #555; font-weight: 500; }
+    .hours-time { font-weight: 700; }
+    .time-mint { color: var(--mint); }
+    .time-sky { color: var(--sky); }
+    .hours-highlight {
+      background: rgba(107,203,119,0.1); border-radius: 10px;
+      padding: 0.6rem 0.75rem; margin: 0.3rem 0; border-bottom: none !important;
+    }
+    .hours-highlight .hours-row-label strong { color: var(--dark); }
+    .timeline-section { margin-top: 1.5rem; }
+    .timeline-label { color: #aaa; font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
+    .timeline-day-label { color: #777; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; }
+    .timeline-bar { position: relative; height: 36px; border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.04); margin-bottom: 1.2rem; }
+    .tl-seg { position: absolute; height: 100%; display: flex; align-items: center; justify-content: center; }
+    .tl-seg span { font-size: 0.68rem; font-weight: 700; color: #fff; white-space: nowrap; }
+    .timeline-ticks { display: flex; justify-content: space-between; padding: 0 2px; margin-bottom: 1.5rem; }
+    .timeline-ticks span { font-size: 0.7rem; color: #bbb; font-weight: 600; }
+
+    /* ===== Kids School ===== */
+    #kids { background: linear-gradient(135deg, #f0faf6 0%, #FFF8F0 100%); }
+    .kids-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; margin-top: 2.5rem; }
+    .ks-cards { display: flex; flex-direction: column; gap: 1rem; }
+    .ks-card {
+      background: #fff; border-radius: 16px; padding: 1.2rem 1.4rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+      border-left: 5px solid var(--mint); box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .ks-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; width: 28px; text-align: center; }
+    .ks-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #aaa; margin-bottom: 0.25rem; }
+    .ks-value { font-family: 'Fredoka', sans-serif; font-size: 1.25rem; color: var(--dark); line-height: 1.2; }
+    .ks-sub { font-size: 0.85rem; color: #999; font-weight: 500; }
+    .ks-note { font-size: 0.85rem; color: #666; font-weight: 500; margin-top: 0.25rem; line-height: 1.6; }
+    .kids-cta-box {
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      border-radius: 24px; padding: 2.5rem;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .kids-cta-box::before {
+      content: ''; position: absolute; top: -30px; right: -30px;
+      width: 120px; height: 120px; background: rgba(255,255,255,0.2); border-radius: 50%;
+    }
+    .kids-cta-box::after {
+      content: ''; position: absolute; bottom: -20px; left: -20px;
+      width: 80px; height: 80px; background: rgba(255,255,255,0.15); border-radius: 50%;
+    }
+    .kids-cta-icon { font-size: 3.5rem; color: #fff; margin-bottom: 1rem; display: block; position: relative; }
+    .kids-cta-box h3 { font-family: 'Fredoka', sans-serif; color: #fff; font-size: 1.6rem; margin-bottom: 0.75rem; position: relative; }
+    .kids-cta-box p { color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; position: relative; }
+    .kids-info-row {
+      background: rgba(255,255,255,0.25); border-radius: 12px; padding: 0.7rem 1rem;
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; position: relative;
+    }
+    .kids-info-row-key { color: rgba(255,255,255,0.8); font-size: 0.85rem; font-weight: 500; }
+    .kids-info-row-val { font-family: 'Fredoka', sans-serif; font-size: 1.05rem; color: #fff; }
+    .kids-tel-btn {
+      display: block; background: var(--coral); color: #fff;
+      font-family: 'Fredoka', sans-serif; font-size: 1rem;
+      padding: 0.85rem 1.5rem; border-radius: 50px; text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s; margin-bottom: 0.5rem;
+      box-shadow: 0 4px 15px rgba(255,107,107,0.3); position: relative;
+    }
+    .kids-tel-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255,107,107,0.4); }
+    .kids-tel-note { color: rgba(255,255,255,0.6); font-size: 0.78rem; font-weight: 500; position: relative; }
+
+    /* ===== Access ===== */
+    #access { background: #fff; }
+    .access-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
+    .access-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .access-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .access-icon {
+      flex-shrink: 0; width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+    }
+    .ai-coral  { background: rgba(255,107,107,0.12); }
+    .ai-sky    { background: rgba(77,150,255,0.12); }
+    .ai-mint   { background: rgba(107,203,119,0.12); }
+    .ai-purple { background: rgba(155,93,229,0.12); }
+    .access-text h4 { font-weight: 700; font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; color: #aaa; margin-bottom: 0.3rem; }
+    .access-text p { font-size: 0.95rem; color: var(--dark); font-weight: 600; line-height: 1.5; }
+    .map-container {
+      background: linear-gradient(135deg, #eef6ff 0%, #f5f0ff 100%);
+      border-radius: 24px; overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06); min-height: 320px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 1rem; border: 2px solid rgba(77,150,255,0.2);
+    }
+    .map-pin-anim { font-size: 3rem; color: var(--coral); animation: bounce 1.5s ease-in-out infinite; }
+    @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    .map-container p { color: #888; font-size: 0.9rem; }
+    .map-link {
+      display: inline-block; background: var(--yellow); color: var(--dark);
+      font-weight: 700; padding: 0.7rem 1.8rem; border-radius: 50px; text-decoration: none;
+      font-size: 0.9rem; transition: transform 0.2s;
+    }
+    .map-link:hover { transform: scale(1.05); }
+
+    /* ===== Reservation Banner ===== */
+    .reserve-banner {
+      background: linear-gradient(135deg, var(--coral), var(--pink), var(--purple));
+      padding: 80px 2rem; text-align: center; color: #fff; position: relative; overflow: hidden;
+    }
+    .reserve-banner::before {
+      content: ''; position: absolute; top: -60px; left: -60px;
+      width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;
+    }
+    .reserve-banner::after {
+      content: ''; position: absolute; bottom: -40px; right: -40px;
+      width: 150px; height: 150px; background: rgba(255,255,255,0.07); border-radius: 50%;
+    }
+    .reserve-banner h2 { font-family: 'Fredoka', sans-serif; font-size: clamp(1.7rem,4vw,2.5rem); margin-bottom: 0.8rem; position: relative; }
+    .reserve-banner p { font-size: 1rem; opacity: 0.85; margin-bottom: 0.4rem; position: relative; }
+    .reserve-sub { font-size: 0.85rem; opacity: 0.65; margin-bottom: 2rem !important; }
+    .reserve-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #fff; color: var(--coral); padding: 1rem 2.8rem; border-radius: 50px;
+      font-size: 1.15rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.18); transition: transform 0.3s, box-shadow 0.3s; position: relative;
+    }
+    .reserve-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 35px rgba(0,0,0,0.25); }
+    .reserve-note { color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 1.2rem !important; position: relative; }
+
+    /* ===== Footer ===== */
+    footer { background: var(--cream); color: #888; padding: 40px 2rem 30px; text-align: center; border-top: 4px solid var(--yellow); }
+    .footer-logo { font-family: 'Fredoka', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--dark); margin-bottom: 0.3rem; }
+    .footer-logo span { color: var(--coral); }
+    .footer-sub { font-size: 0.75rem; color: #aaa; letter-spacing: 2px; margin-bottom: 1.2rem; }
+    .footer-address { font-size: 0.85rem; color: #999; margin-bottom: 0.3rem; }
+    .footer-address a { color: #999; text-decoration: none; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; list-style: none; margin: 1.2rem 0; flex-wrap: wrap; }
+    .footer-links a { color: #999; text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--coral); }
+    .footer-copy { font-size: 0.75rem; color: #bbb; }
+
+    /* ===== Scrollbar ===== */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f5f0ea; }
+    ::-webkit-scrollbar-thumb { background: var(--coral); border-radius: 4px; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column; position: absolute;
+        top: 70px; left: 0; right: 0;
+        background: rgba(255,248,240,0.98); backdrop-filter: blur(12px);
+        padding: 1.5rem 2rem; gap: 1rem; border-bottom: 3px solid var(--yellow);
+      }
+      .nav-cta { width: fit-content; }
+      .hours-grid, .kids-wrapper, .access-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.5rem; }
+      section { padding: 60px 1.5rem; }
+    }
+    @media (max-width: 600px) {
+      .features-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-main, .gallery-wide { grid-column: 1/3; }
+      .pt-head, .pt-row { grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr; }
+      .pt-row .pt-label, .pt-col { padding: 0.6rem 0.3rem; font-size: 0.78rem; }
+    }
+
+    /* ===== Animations ===== */
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      ESCAPE<span>&</span>
+      <small>COFFEE &amp; CLIMBING</small>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">特徴</a></li>
+      <li><a href="#pricing">料金</a></li>
+      <li><a href="#hours">営業時間</a></li>
+      <li><a href="#kids">キッズスクール</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="https://airrsv.net/escapemujin/calendar" target="_blank" class="nav-cta">セルフ利用を予約</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape s1"></div><div class="shape s2"></div>
+    <div class="shape s3"></div><div class="shape s4"></div><div class="shape s5"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge"><i class="fa-solid fa-hand-rock"></i> <i class="fa-solid fa-mug-hot"></i> 行橋・京築エリアのボルダリングジム＆カフェ</span>
+    <h1>
+      <span class="line1">ESCAPE</span><br />
+      <span class="line2">coffee&amp;climbing</span>
+    </h1>
+    <p class="hero-sub">登って、休んで、また登る。<br />コーヒーとクライミングが出会う場所。</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">課題数</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">300㎡</div>
+        <div class="stat-label">広大なエリア</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6〜24</div>
+        <div class="stat-label">営業時間</div>
+      </div>
+    </div>
+    <a href="https://airrsv.net/escapemujin/calendar" target="_blank" class="hero-cta">
+      <i class="fa-solid fa-calendar-check"></i> セルフ利用を予約する
+    </a>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section id="features">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-fire"></i> WHY ESCAPE</span>
+    <h2 class="section-title">選ばれる4つの理由</h2>
+    <div class="section-accent" style="background:var(--coral);"></div>
+    <div class="features-grid">
+      <div class="feature-card fc-1 fade-up">
+        <span class="feature-icon"><i class="fa-solid fa-mountain"></i></span>
+        <h3>豊富な課題バリエーション</h3>
+        <p>初級〜上級まで100本以上の課題を常設。毎月リセットで飽きない。</p>
+      </div>
+      <div class="feature-card fc-2 fade-up">
+        <span class="feature-icon"><i class="fa-solid fa-shoe-prints"></i></span>
+        <h3>レンタル完備</h3>
+        <p>シューズ・チョーク完備。手ぶらでOK。小学生はパスにレンタル料が含まれます。</p>
+      </div>
+      <div class="feature-card fc-3 fade-up">
+        <span class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+        <h3>コーチによる指導</h3>
+        <p>毎週末スクール開催。基礎から丁寧に教えます。キッズスクールも大好評！</p>
+      </div>
+      <div class="feature-card fc-4 fade-up">
+        <span class="feature-icon"><i class="fa-solid fa-mug-hot"></i></span>
+        <h3>本格カフェ併設</h3>
+        <p>La Marzocco のエスプレッソマシン × Coffee County 焙煎のスペシャルティコーヒー。登った後のご褒美に。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-camera"></i> GALLERY</span>
+    <h2 class="section-title">ジムの雰囲気</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-main fade-up">
+        <img src="DSC_9852.jpg" alt="壁を登るクライマー" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-person-falling></i> クライミングウォール</div>'" />
+        <div class="gallery-caption">壁を登る楽しさ、全身で。</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <img src="IMG_2399.jpg" alt="ボルダリングウォール全景" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-puzzle-piece></i> カラフルなホールド</div>'" />
+        <div class="gallery-caption">カラフルなホールドが並ぶ本格ウォール</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <img src="IMG_6001.jpg" alt="カフェスペース・エスプレッソマシン" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-mug-hot></i> カフェスペース</div>'" />
+        <div class="gallery-caption">La Marzocco × Coffee County のこだわりコーヒー</div>
+      </div>
+      <div class="gallery-item gallery-wide fade-up">
+        <img src="IMG_0018.jpg" alt="店内フロア全景" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-store></i> 開放的な店内</div>'" />
+        <div class="gallery-caption">開放的な空間 — カフェと壁が同じ屋根の下</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-tag"></i> PRICING</span>
+    <h2 class="section-title">料金案内</h2>
+    <div class="section-accent" style="background:var(--coral);"></div>
+    <p class="section-desc">初めての方は<strong>初回体験パック</strong>がおすすめ！すべて税込み価格です。</p>
+
+    <!-- 初回体験パック（単独カード） -->
+    <div class="price-block fade-up" style="margin-top:2rem;">
+      <h3 class="price-block-title"><i class="fa-solid fa-star" style="color:var(--coral);"></i> 初めての方におすすめ！</h3>
+      <div class="price-table" style="border-color:var(--coral);">
+        <div class="pt-head" style="background:var(--coral);">
+          <div class="pt-label" style="color:#fff;font-weight:700;padding:0.7rem 1rem;"></div>
+          <div class="pt-col col-general">一般</div>
+          <div class="pt-col col-student">中学・高校生</div>
+          <div class="pt-col col-kids">小学生</div>
+        </div>
+        <div class="pt-row highlight-row">
+          <div class="pt-label"><i class="fa-solid fa-star"></i> 初回体験パック<small>登録料＋90分パス＋レンタル込</small></div>
+          <div class="pt-col" style="font-size:1.1rem;font-weight:800;color:var(--coral);">¥2,500</div>
+          <div class="pt-col" style="font-size:1.1rem;font-weight:800;color:var(--coral);">¥2,300</div>
+          <div class="pt-col" style="font-size:1.1rem;font-weight:800;color:var(--coral);">¥2,000</div>
+        </div>
+      </div>
+      <p class="price-note"><strong>手ぶらでOK！</strong> これひとつで登録・利用・レンタルがすべて含まれます。</p>
+    </div>
+
+    <!-- 施設利用料 -->
+    <div class="price-block fade-up">
+      <h3 class="price-block-title"><i class="fa-solid fa-yen-sign"></i> 施設利用料</h3>
+      <div class="price-table">
+        <div class="pt-head">
+          <div class="pt-label"></div>
+          <div class="pt-col col-general">一般</div>
+          <div class="pt-col col-student">中学・高校生</div>
+          <div class="pt-col col-kids">小学生</div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">初回登録料</div>
+          <div class="pt-col col-span2" style="grid-column:span 3;text-align:center;">¥1,100</div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">１日パス</div>
+          <div class="pt-col">¥2,000</div>
+          <div class="pt-col">¥1,500</div>
+          <div class="pt-col">¥1,200</div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">90分パス</div>
+          <div class="pt-col">¥1,500</div>
+          <div class="note-cell"><span>※90分→1日パスへの変更は+¥700</span></div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">レンタル<small>シューズ＆チョーク</small></div>
+          <div class="pt-col col-span2">¥200</div>
+          <div class="pt-col">¥0<small>（パスに含む）</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1ヶ月パス・回数券 -->
+    <div class="price-block fade-up">
+      <h3 class="price-block-title"><i class="fa-solid fa-ticket"></i> 1ヶ月パス・回数券</h3>
+      <div class="price-table">
+        <div class="pt-head">
+          <div class="pt-label"></div>
+          <div class="pt-col col-general">一般</div>
+          <div class="pt-col col-student">中学・高校生</div>
+          <div class="pt-col col-kids">小学生</div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">１ヵ月パス</div>
+          <div class="pt-col">¥11,000</div>
+          <div class="pt-col">¥8,500</div>
+          <div class="pt-col">¥7,000<small>（スクール生は半額）</small></div>
+        </div>
+        <div class="pt-row">
+          <div class="pt-label">回数券（6回）</div>
+          <div class="pt-col">¥10,800</div>
+          <div class="pt-col">¥8,100</div>
+          <div class="pt-col">¥6,500</div>
+        </div>
+      </div>
+      <p class="price-note">※回数券は本人のみ利用・無人営業不可・有効期限3か月（払戻し不可）</p>
+    </div>
+
+    <!-- キッズウォール -->
+    <div class="price-block fade-up">
+      <div class="kids-wall-row">
+        <span class="kids-wall-label"><i class="fa-solid fa-child"></i> キッズウォール</span>
+        <span class="kids-wall-val">¥750</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOURS ===== -->
+<section id="hours">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-clock"></i> HOURS</span>
+    <h2 class="section-title">営業時間</h2>
+    <div class="section-accent" style="background:var(--mint);"></div>
+
+    <p class="hours-note-text">
+      通常営業時間はスタッフが常駐します。予約不要でご来店いただけます。<br />
+      セルフ利用時間帯は無人での利用となります。<strong>事前予約が必要です。</strong>
+    </p>
+
+    <div class="hours-legend">
+      <div class="hours-legend-item">
+        <div class="legend-dot legend-dot-mint"></div>
+        <span>通常営業（スタッフあり）</span>
+      </div>
+      <div class="hours-legend-item">
+        <div class="legend-dot legend-dot-sky"></div>
+        <span>セルフ利用（スタッフ不在・要予約）</span>
+      </div>
+    </div>
+
+    <div class="hours-grid fade-up">
+      <div class="hours-card">
+        <h3>月〜金曜日</h3>
+        <div class="hours-row">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-sky"></div>セルフ利用
+          </div>
+          <span class="hours-time time-sky">06:00 – 13:00</span>
+        </div>
+        <div class="hours-row hours-highlight">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-mint"></div><strong style="color:var(--dark)">通常営業</strong>
+          </div>
+          <span class="hours-time time-mint">13:00 – 21:00</span>
+        </div>
+        <div class="hours-row">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-sky"></div>セルフ利用
+          </div>
+          <span class="hours-time time-sky">21:00 – 24:00</span>
+        </div>
+      </div>
+      <div class="hours-card">
+        <h3>土・日・祝日</h3>
+        <div class="hours-row">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-sky"></div>セルフ利用
+          </div>
+          <span class="hours-time time-sky">06:00 – 11:00</span>
+        </div>
+        <div class="hours-row hours-highlight">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-mint"></div><strong style="color:var(--dark)">通常営業</strong>
+          </div>
+          <span class="hours-time time-mint">11:00 – 19:00</span>
+        </div>
+        <div class="hours-row">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-sky"></div>セルフ利用
+          </div>
+          <span class="hours-time time-sky">19:00 – 24:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-section fade-up">
+      <p class="timeline-label">1日のタイムライン</p>
+      <p class="timeline-day-label">月〜金</p>
+      <div class="timeline-bar">
+        <div class="tl-seg" style="left:0;width:38.9%;background:var(--sky);opacity:0.75;">
+          <span>セルフ 06-13</span>
+        </div>
+        <div class="tl-seg" style="left:38.9%;width:44.4%;background:var(--mint);">
+          <span>通常営業 13-21</span>
+        </div>
+        <div class="tl-seg" style="left:83.3%;width:16.7%;background:var(--sky);opacity:0.75;">
+          <span>セルフ 21-24</span>
+        </div>
+      </div>
+      <p class="timeline-day-label">土・日・祝</p>
+      <div class="timeline-bar">
+        <div class="tl-seg" style="left:0;width:27.8%;background:var(--sky);opacity:0.75;">
+          <span>セルフ 06-11</span>
+        </div>
+        <div class="tl-seg" style="left:27.8%;width:44.4%;background:var(--mint);">
+          <span>通常営業 11-19</span>
+        </div>
+        <div class="tl-seg" style="left:72.2%;width:27.8%;background:var(--sky);opacity:0.75;">
+          <span>セルフ 19-24</span>
+        </div>
+      </div>
+      <div class="timeline-ticks">
+        <span>6:00</span><span>12:00</span><span>18:00</span><span>24:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KIDS SCHOOL ===== -->
+<section id="kids">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-child-reaching"></i> KIDS SCHOOL</span>
+    <h2 class="section-title">キッズスクール</h2>
+    <div class="section-accent" style="background:var(--orange);"></div>
+    <p class="section-desc">登る楽しさと達成感を通じて、チャレンジする気持ちを育てます。未経験者さん大歓迎！</p>
+
+    <div class="kids-wrapper">
+      <div class="ks-cards fade-up">
+        <div class="ks-card" style="border-color:var(--yellow);">
+          <div class="ks-icon"><i class="fa-solid fa-yen-sign" style="color:var(--mint);"></i></div>
+          <div>
+            <div class="ks-label">料金</div>
+            <div class="ks-value">¥5,500 <span class="ks-sub">/ 月4回</span></div>
+            <div class="ks-note">月パスに +¥2,750 で参加もOK</div>
+          </div>
+        </div>
+        <div class="ks-card" style="border-color:var(--sky);">
+          <div class="ks-icon"><i class="fa-solid fa-calendar-days" style="color:var(--sky);"></i></div>
+          <div>
+            <div class="ks-label">開催曜日・時間</div>
+            <div class="ks-value">火・水・土</div>
+            <div class="ks-sub">17:00 〜 19:00</div>
+          </div>
+        </div>
+        <div class="ks-card" style="border-color:var(--mint);">
+          <div class="ks-icon"><i class="fa-solid fa-child-reaching" style="color:var(--mint);"></i></div>
+          <div>
+            <div class="ks-label">対象</div>
+            <div class="ks-value">4歳 〜 小学6年生</div>
+            <div class="ks-note">ボルダリング未経験からOK</div>
+          </div>
+        </div>
+        <div class="ks-card" style="border-color:var(--coral);">
+          <div class="ks-icon"><i class="fa-solid fa-trophy" style="color:var(--coral);"></i></div>
+          <div>
+            <div class="ks-label">スクール内容</div>
+            <div class="ks-note">
+              初級クラスでは登る楽しさやゴールする達成感を通じてチャレンジする気持ちを養います。慣れてきたら基礎的な動きの指導を通して技術向上、さらに譲り合いや教え合いなど協調性も育みます。<br />
+              <span style="color:var(--coral);font-weight:700;">※慣れてきたら保護者同伴不要です</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kids-cta-box fade-up">
+        <span class="kids-cta-icon"><i class="fa-solid fa-hand-rock"></i></span>
+        <h3>生徒さん募集中！</h3>
+        <p>初めての子でも大丈夫。<br />壁を登る楽しさを一緒に見つけよう！</p>
+        <div class="kids-info-row">
+          <span class="kids-info-row-key">クラス定員</span>
+          <span class="kids-info-row-val" style="color:var(--mint);">少人数制</span>
+        </div>
+        <div class="kids-info-row">
+          <span class="kids-info-row-key">体験レッスン</span>
+          <span class="kids-info-row-val" style="color:var(--yellow);">随時受付中</span>
+        </div>
+        <a href="tel:0930310272" class="kids-tel-btn">
+          <i class="fa-solid fa-phone"></i> 0930-31-0272 に電話する
+        </a>
+        <p class="kids-tel-note">お気軽にお問い合わせください</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section id="access">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-location-dot"></i> ACCESS</span>
+    <h2 class="section-title">アクセス</h2>
+    <div class="section-accent" style="background:var(--sky);"></div>
+    <p class="section-desc">行橋市・京築エリアからお車で気軽にどうぞ。JR行橋駅からも徒歩圏内です。</p>
+
+    <div class="access-grid">
+      <div class="access-info fade-up">
+        <div class="access-item">
+          <div class="access-icon ai-coral"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="access-text">
+            <h4>住所</h4>
+            <p>〒824-0001<br />福岡県行橋市行事4-3-2</p>
+          </div>
+        </div>
+        <div class="access-item">
+          <div class="access-icon ai-sky"><i class="fa-solid fa-train"></i></div>
+          <div class="access-text">
+            <h4>電車</h4>
+            <p>JR行橋駅から徒歩15分</p>
+          </div>
+        </div>
+        <div class="access-item">
+          <div class="access-icon ai-mint"><i class="fa-solid fa-car"></i></div>
+          <div class="access-text">
+            <h4>駐車場</h4>
+            <p>無料駐車場あり</p>
+          </div>
+        </div>
+        <div class="access-item">
+          <div class="access-icon ai-purple"><i class="fa-solid fa-phone"></i></div>
+          <div class="access-text">
+            <h4>お問い合わせ</h4>
+            <p><a href="tel:0930310272" style="color:var(--dark);text-decoration:none;">0930-31-0272</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container fade-up">
+        <div class="map-pin-anim"><i class="fa-solid fa-location-dot"></i></div>
+        <p>Googleマップで開く</p>
+        <a href="https://maps.google.com/?q=福岡県行橋市行事4-3-2" target="_blank" class="map-link">
+          <i class="fa-solid fa-map"></i> 地図アプリで見る
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVATION BANNER ===== -->
+<section class="reserve-banner" id="reserve">
+  <h2><i class="fa-solid fa-hand-rock"></i> 早朝・深夜も登れる。<br>セルフ利用は予約から。</h2>
+  <p>スタッフ不在時間帯のご利用は事前予約が必要です。</p>
+  <p class="reserve-sub">24時間いつでもオンラインで予約できます。</p>
+  <a href="https://airrsv.net/escapemujin/calendar" target="_blank" class="reserve-btn">
+    <i class="fa-solid fa-calendar-check"></i> セルフ利用を予約する
+  </a>
+  <p class="reserve-note">通常営業時間（スタッフあり）は予約不要です</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-logo">ESCAPE<span>&</span></div>
+  <div class="footer-sub">COFFEE &amp; CLIMBING</div>
+  <p class="footer-address">〒824-0001 福岡県行橋市行事4-3-2　TEL: <a href="tel:0930310272">0930-31-0272</a></p>
+  <p class="footer-address" style="font-size:0.8rem;color:#555;">行橋・京築・北九州エリアのボルダリングジム＆カフェ</p>
+  <ul class="footer-links">
+    <li><a href="#features">特徴</a></li>
+    <li><a href="#pricing">料金</a></li>
+    <li><a href="#hours">営業時間</a></li>
+    <li><a href="#kids">キッズスクール</a></li>
+    <li><a href="#access">アクセス</a></li>
+    <li><a href="https://www.instagram.com/escape_candc/" target="_blank">Instagram</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2025 ESCAPE coffee&amp;climbing. All rights reserved.</p>
+</footer>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => navLinks.classList.remove('open'))
+  );
+
+  // Scroll fade-up animation
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
