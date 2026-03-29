@@ -243,10 +243,8 @@
     /* ===== Gallery ===== */
     #gallery { background: linear-gradient(135deg, #FFF3E0 0%, #FFF8F0 100%); padding: 80px 2rem; }
     #gallery .section-label { color: var(--orange); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 2.5rem; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 2.5rem; }
     .gallery-item { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 4/3; background: #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-    .gallery-main { grid-column: 1/3; aspect-ratio: 16/9; }
-    .gallery-wide { grid-column: 1/3; aspect-ratio: 16/7; }
     .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
     .gallery-item:hover img { transform: scale(1.05); }
     .gallery-caption {
@@ -322,7 +320,7 @@
     .hours-legend-item span { color: #666; font-size: 0.9rem; font-weight: 500; }
     .hours-note-text { color: #888; font-size: 0.88rem; margin-bottom: 2rem; line-height: 1.7; }
     .hours-note-text strong { color: var(--coral); }
-    .hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem; }
+    .hours-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; }
     .hours-card {
       background: var(--cream); border: 2px solid rgba(0,0,0,0.06);
       border-radius: 24px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.04);
@@ -342,7 +340,8 @@
       background: rgba(107,203,119,0.1); border-radius: 10px;
       padding: 0.6rem 0.75rem; margin: 0.3rem 0; border-bottom: none !important;
     }
-    .hours-highlight .hours-row-label strong { color: var(--dark); }
+    .hours-highlight .hours-row-label strong { color: var(--dark); font-size: 1.05rem; }
+    .hours-highlight .hours-time { font-size: 1.05rem; font-weight: 700; }
     .timeline-section { margin-top: 1.5rem; }
     .timeline-label { color: #aaa; font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
     .timeline-day-label { color: #777; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.4rem; }
@@ -414,21 +413,11 @@
     .access-text h4 { font-weight: 700; font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; color: #aaa; margin-bottom: 0.3rem; }
     .access-text p { font-size: 0.95rem; color: var(--dark); font-weight: 600; line-height: 1.5; }
     .map-container {
-      background: linear-gradient(135deg, #eef6ff 0%, #f5f0ff 100%);
       border-radius: 24px; overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.06); min-height: 320px;
-      display: flex; flex-direction: column; align-items: center;
-      justify-content: center; gap: 1rem; border: 2px solid rgba(77,150,255,0.2);
+      height: 380px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 2px solid rgba(77,150,255,0.15);
     }
-    .map-pin-anim { font-size: 3rem; color: var(--coral); animation: bounce 1.5s ease-in-out infinite; }
-    @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .map-container p { color: #888; font-size: 0.9rem; }
-    .map-link {
-      display: inline-block; background: var(--yellow); color: var(--dark);
-      font-weight: 700; padding: 0.7rem 1.8rem; border-radius: 50px; text-decoration: none;
-      font-size: 0.9rem; transition: transform 0.2s;
-    }
-    .map-link:hover { transform: scale(1.05); }
+    .map-container iframe { width: 100%; height: 100%; border: 0; display: block; }
 
     /* ===== Reservation Banner ===== */
     .reserve-banner {
@@ -484,14 +473,14 @@
         padding: 1.5rem 2rem; gap: 1rem; border-bottom: 3px solid var(--yellow);
       }
       .nav-cta { width: fit-content; }
-      .hours-grid, .kids-wrapper, .access-grid { grid-template-columns: 1fr; }
+      .hours-grid { grid-template-columns: 1fr; }
+      .kids-wrapper, .access-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.5rem; }
       section { padding: 60px 1.5rem; }
     }
     @media (max-width: 600px) {
       .features-grid { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
-      .gallery-main, .gallery-wide { grid-column: 1/3; }
       .pt-head, .pt-row { grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr; }
       .pt-row .pt-label, .pt-col { padding: 0.6rem 0.3rem; font-size: 0.78rem; }
     }
@@ -507,7 +496,7 @@
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">
-      ESCAPE<span>&</span>
+      ESCAPE
       <small>COFFEE &amp; CLIMBING</small>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -536,7 +525,6 @@
       <span class="line1">ESCAPE</span><br />
       <span class="line2">coffee&amp;climbing</span>
     </h1>
-    <p class="hero-sub">登って、休んで、また登る。<br />コーヒーとクライミングが出会う場所。</p>
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">100+</div>
@@ -546,14 +534,7 @@
         <div class="stat-num">300㎡</div>
         <div class="stat-label">広大なエリア</div>
       </div>
-      <div class="stat">
-        <div class="stat-num">6〜24</div>
-        <div class="stat-label">営業時間</div>
-      </div>
     </div>
-    <a href="https://airrsv.net/escapemujin/calendar" target="_blank" class="hero-cta">
-      <i class="fa-solid fa-calendar-check"></i> セルフ利用を予約する
-    </a>
   </div>
 </section>
 
@@ -583,36 +564,6 @@
         <span class="feature-icon"><i class="fa-solid fa-mug-hot"></i></span>
         <h3>本格カフェ併設</h3>
         <p>La Marzocco のエスプレッソマシン × Coffee County 焙煎のスペシャルティコーヒー。登った後のご褒美に。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== GALLERY ===== -->
-<section id="gallery">
-  <div class="section-inner">
-    <span class="section-label"><i class="fa-solid fa-camera"></i> GALLERY</span>
-    <h2 class="section-title">ジムの雰囲気</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item gallery-main fade-up">
-        <img src="DSC_9852.jpg" alt="壁を登るクライマー" loading="lazy"
-          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-person-falling></i> クライミングウォール</div>'" />
-        <div class="gallery-caption">壁を登る楽しさ、全身で。</div>
-      </div>
-      <div class="gallery-item fade-up">
-        <img src="IMG_2399.jpg" alt="ボルダリングウォール全景" loading="lazy"
-          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-puzzle-piece></i> カラフルなホールド</div>'" />
-        <div class="gallery-caption">カラフルなホールドが並ぶ本格ウォール</div>
-      </div>
-      <div class="gallery-item fade-up">
-        <img src="IMG_6001.jpg" alt="カフェスペース・エスプレッソマシン" loading="lazy"
-          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-mug-hot></i> カフェスペース</div>'" />
-        <div class="gallery-caption">La Marzocco × Coffee County のこだわりコーヒー</div>
-      </div>
-      <div class="gallery-item gallery-wide fade-up">
-        <img src="IMG_0018.jpg" alt="店内フロア全景" loading="lazy"
-          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-store></i> 開放的な店内</div>'" />
-        <div class="gallery-caption">開放的な空間 — カフェと壁が同じ屋根の下</div>
       </div>
     </div>
   </div>
@@ -740,7 +691,7 @@
 
     <div class="hours-grid fade-up">
       <div class="hours-card">
-        <h3>月〜金曜日</h3>
+        <h3>月・火・水・金曜日</h3>
         <div class="hours-row">
           <div class="hours-row-label">
             <div class="legend-dot legend-dot-sky"></div>セルフ利用
@@ -758,6 +709,15 @@
             <div class="legend-dot legend-dot-sky"></div>セルフ利用
           </div>
           <span class="hours-time time-sky">21:00 – 24:00</span>
+        </div>
+      </div>
+      <div class="hours-card">
+        <h3>木曜日</h3>
+        <div class="hours-row">
+          <div class="hours-row-label">
+            <div class="legend-dot legend-dot-sky"></div>セルフ利用（終日）
+          </div>
+          <span class="hours-time time-sky">06:00 – 24:00</span>
         </div>
       </div>
       <div class="hours-card">
@@ -786,7 +746,7 @@
     <!-- Timeline -->
     <div class="timeline-section fade-up">
       <p class="timeline-label">1日のタイムライン</p>
-      <p class="timeline-day-label">月〜金</p>
+      <p class="timeline-day-label">月・火・水・金</p>
       <div class="timeline-bar">
         <div class="tl-seg" style="left:0;width:38.9%;background:var(--sky);opacity:0.75;">
           <span>セルフ 06-13</span>
@@ -796,6 +756,12 @@
         </div>
         <div class="tl-seg" style="left:83.3%;width:16.7%;background:var(--sky);opacity:0.75;">
           <span>セルフ 21-24</span>
+        </div>
+      </div>
+      <p class="timeline-day-label">木曜日</p>
+      <div class="timeline-bar">
+        <div class="tl-seg" style="left:0;width:100%;background:var(--sky);opacity:0.75;">
+          <span>セルフ利用 06-24（終日）</span>
         </div>
       </div>
       <p class="timeline-day-label">土・日・祝</p>
@@ -832,7 +798,6 @@
           <div>
             <div class="ks-label">料金</div>
             <div class="ks-value">¥5,500 <span class="ks-sub">/ 月4回</span></div>
-            <div class="ks-note">月パスに +¥2,750 で参加もOK</div>
           </div>
         </div>
         <div class="ks-card" style="border-color:var(--sky);">
@@ -847,7 +812,7 @@
           <div class="ks-icon"><i class="fa-solid fa-child-reaching" style="color:var(--mint);"></i></div>
           <div>
             <div class="ks-label">対象</div>
-            <div class="ks-value">4歳 〜 小学6年生</div>
+            <div class="ks-value">小学1年生 〜 小学6年生</div>
             <div class="ks-note">ボルダリング未経験からOK</div>
           </div>
         </div>
@@ -875,10 +840,36 @@
           <span class="kids-info-row-key">体験レッスン</span>
           <span class="kids-info-row-val" style="color:var(--yellow);">随時受付中</span>
         </div>
-        <a href="tel:0930310272" class="kids-tel-btn">
-          <i class="fa-solid fa-phone"></i> 0930-31-0272 に電話する
-        </a>
-        <p class="kids-tel-note">お気軽にお問い合わせください</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="section-inner">
+    <span class="section-label"><i class="fa-solid fa-camera"></i> GALLERY</span>
+    <h2 class="section-title">ジムの雰囲気</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-up">
+        <img src="DSC_9852.jpg" alt="壁を登るクライマー" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-person-falling></i> クライミングウォール</div>'" />
+        <div class="gallery-caption">壁を登る楽しさ、全身で。</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <img src="IMG_2399.jpg" alt="ボルダリングウォール全景" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-puzzle-piece></i> カラフルなホールド</div>'" />
+        <div class="gallery-caption">カラフルなホールドが並ぶ本格ウォール</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <img src="IMG_6001.jpg" alt="カフェスペース・エスプレッソマシン" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-mug-hot></i> カフェスペース</div>'" />
+        <div class="gallery-caption">La Marzocco × Coffee County のこだわりコーヒー</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <img src="IMG_0018.jpg" alt="店内フロア全景" loading="lazy"
+          onerror="this.parentElement.innerHTML='<div class=gallery-placeholder><i class=fa-solid\ fa-store></i> 開放的な店内</div>'" />
+        <div class="gallery-caption">開放的な空間 — カフェと壁が同じ屋根の下</div>
       </div>
     </div>
   </div>
@@ -924,11 +915,13 @@
         </div>
       </div>
       <div class="map-container fade-up">
-        <div class="map-pin-anim"><i class="fa-solid fa-location-dot"></i></div>
-        <p>Googleマップで開く</p>
-        <a href="https://maps.google.com/?q=福岡県行橋市行事4-3-2" target="_blank" class="map-link">
-          <i class="fa-solid fa-map"></i> 地図アプリで見る
-        </a>
+        <iframe
+          src="https://maps.google.com/maps?q=ESCAPE+coffee%26climbing+福岡県行橋市行事4-3-2&z=17&output=embed&hl=ja"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="ESCAPE coffee&amp;climbing の地図">
+        </iframe>
       </div>
     </div>
   </div>
@@ -936,7 +929,7 @@
 
 <!-- ===== RESERVATION BANNER ===== -->
 <section class="reserve-banner" id="reserve">
-  <h2><i class="fa-solid fa-hand-rock"></i> 早朝・深夜も登れる。<br>セルフ利用は予約から。</h2>
+  <h2><i class="fa-solid fa-hand-rock"></i> セルフ利用は予約から。</h2>
   <p>スタッフ不在時間帯のご利用は事前予約が必要です。</p>
   <p class="reserve-sub">24時間いつでもオンラインで予約できます。</p>
   <a href="https://airrsv.net/escapemujin/calendar" target="_blank" class="reserve-btn">
@@ -947,7 +940,7 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <div class="footer-logo">ESCAPE<span>&</span></div>
+  <div class="footer-logo">ESCAPE</div>
   <div class="footer-sub">COFFEE &amp; CLIMBING</div>
   <p class="footer-address">〒824-0001 福岡県行橋市行事4-3-2　TEL: <a href="tel:0930310272">0930-31-0272</a></p>
   <p class="footer-address" style="font-size:0.8rem;color:#555;">行橋・京築・北九州エリアのボルダリングジム＆カフェ</p>
@@ -959,6 +952,9 @@
     <li><a href="#access">アクセス</a></li>
     <li><a href="https://www.instagram.com/escape_candc/" target="_blank">Instagram</a></li>
   </ul>
+  <p style="margin-bottom:0.75rem;">
+    <a href="tokusho.html" style="color:#aaa;font-size:0.8rem;text-decoration:none;border-bottom:1px solid #ddd;padding-bottom:1px;">特定商取引法に基づく表記</a>
+  </p>
   <p class="footer-copy">&copy; 2025 ESCAPE coffee&amp;climbing. All rights reserved.</p>
 </footer>
 
